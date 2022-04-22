@@ -29,6 +29,7 @@
                     return response.json();
                 })
                 .then(function(data){
+                    var output = "";
                     for(a = 0; a<data.length ; a++){
                         output +=`
                         <a href="show-recipe.html?id=${data[a].id}">
